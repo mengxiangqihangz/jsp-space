@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<bean path="/login.do" className="com.justin.controller.sys.LoginController">
+		<property name="success">index.jsp</property>
+		<property name="fail">login.jsp</property>
+	</bean>
+	
+	<bean path="/register.do" className="com.justin.controller.sys.RegisterController">
+		<property name="success">index.jsp</property>
+		<property name="fail">login.jsp</property>
+	</bean>
+	
+	<bean path="/updatePwd.do" className="com.justin.controller.sys.UpdateController">
+		<property name="success">index.jsp</property>
+		<property name="fail">login.jsp</property>
+	</bean>
+	
+	<bean path="/list.do" className="com.justin.controller.sys.ListController">
+		<property name="success">userList.jsp</property>
+	</bean>
+</beans>

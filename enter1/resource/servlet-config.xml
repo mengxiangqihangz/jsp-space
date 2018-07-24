@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<bean path="/register.do" className="com.zdy.cn.controller.sys.LoginController">
+		<property name="success">index.jsp</property>
+		<property name="fail">login.jsp</property>
+	</bean>
+	
+	<bean path="/login.do" className="com.zdy.cn.controller.sys.LoginController">
+		<property name="success">index.jsp</property>
+		<property name="fail">login.jsp</property>
+	</bean>
+
+	<bean path="/updatePwd.do" className="com.zdy.cn.controller.sys.LoginController">
+		<property name="success">index.jsp</property>
+		<property name="fail">login.jsp</property>
+	</bean>
+	
+	<bean path="/list.do" className="com.zdy.cn.controller.sys.LoginController">
+		<property name="success">index.jsp</property>
+		<property name="fail">login.jsp</property>
+	</bean>
+</beans>
