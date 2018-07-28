@@ -9,7 +9,7 @@ function validLogin ()
 	
 	var isPass = regUser.test(userName);
 	if (!isPass) {
-		document.getElementById("userNameErr").innerHTML = 'ÓÃ»§Ãû²»·ûºÏ¹æ·¶';
+		document.getElementById("userNameErr").innerHTML = 'ç”¨æˆ·åä¸ç¬¦åˆè§„èŒƒ';
 		return;
 	}else{
 		document.getElementById("userNameErr").innerHTML = '';
@@ -19,7 +19,7 @@ function validLogin ()
 	isPass = regPwd.test(userPwd);
 
 	if (!isPass) {
-		document.getElementById("userPwdErr").innerHTML = 'ÃÜÂë²»·ûºÏ¹æ·¶';
+		document.getElementById("userPwdErr").innerHTML = 'å¯†ç ä¸ç¬¦åˆè§„èŒƒ';
 		return;
 	}else{
 		document.getElementById("userPwdErr").innerHTML = '';

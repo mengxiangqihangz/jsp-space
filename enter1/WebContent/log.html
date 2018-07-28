@@ -9,7 +9,7 @@
 				var vname=document.getElementsByName('user')[0].value;
 				//var parten=!/^[a-zA-Z]{2,6}$/;
 				if(!/^[a-zA-Z]{4,12}$/.test(vname)){
-					alert("ÄúÊäÈëµÄÃû×Ö¸ñÊ½²»ÕıÈ·");
+					alert("æ‚¨è¾“å…¥çš„åå­—æ ¼å¼ä¸æ­£ç¡®");
 					document.getElementsByName('user')[0].focus();
 					document.getElementsByName('user')[0].select();
 					return false;
@@ -18,7 +18,7 @@
 			function validatepass(){
 				var vpass=document.getElementsByName('userpass')[0].value;
 				if(!/^\w{2,12}$/.test(vpass)){
-					alert("ÄúÊäÈëµÄÃÜÂë¸ñÊ½²»ÕıÈ·");
+					alert("æ‚¨è¾“å…¥çš„å¯†ç æ ¼å¼ä¸æ­£ç¡®");
 					document.getElementsByName('userpass')[0].focus();
 					document.getElementsByName('userpass')[0].select();
 					return false;
@@ -28,17 +28,17 @@
 	</head>
 	<body>	
 		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-		<img src="dengru.gif"><font size="6"><b>¸öÈËÓÃ»§µÇÂ¼</b></font><br/> 
+		<img src="dengru.gif"><font size="6"><b>ä¸ªäººç”¨æˆ·ç™»å½•</b></font><br/> 
 		<br/>				
 		<form  method="post" action="/enter/ppp">
-			<b>ÓÃ»§Ãû£º</b><input type="text" name="user" onblur="validatename()"><br/> 				
+			<b>ç”¨æˆ·åï¼š</b><input type="text" name="user" onblur="validatename()"><br/> 				
 			<br/>				
-			<b>ÃÜ&nbsp;Âë: </b><input type="password" name="userpass" onblur="validatepass()"><br/> 	
+			<b>å¯†&nbsp;ç : </b><input type="password" name="userpass" onblur="validatepass()"><br/> 	
 			<br/>
-			<input type="checkbox" name="usercheck" ><b>¼Ç×¡ÎÒµÄµÇÂ¼×´Ì¬</b><br/> 
+			<input type="checkbox" name="usercheck" ><b>è®°ä½æˆ‘çš„ç™»å½•çŠ¶æ€</b><br/> 
 			<br/>
-			<input type="submit" value="µÇÂ¼" />
-			<input type="reset"  value="ÖØÖÃ"/>
+			<input type="submit" value="ç™»å½•" />
+			<input type="reset"  value="é‡ç½®"/>
 		</form>
 			
 </body>

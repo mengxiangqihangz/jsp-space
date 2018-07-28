@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+    version="2.0">
+    <description>A tag library exercising SimpleTag handlers.</description>
+    <tlib-version>2.0</tlib-version>
+    <short-name>SimpleTagLibrary</short-name>
+	<uri>/tld/mytaglib</uri>
+	<!-- <uri>/tltag</uri> -->
+    <tag>
+		<description>Outputs Hello, World</description>
+        <name>helloWorld</name>
+		<tag-class>lee.HelloWorldSimpleTag</tag-class>
+		<body-content>empty</body-content>
+    </tag>
+    
+    <tag>
+    	<name>hello</name>
+    	<tag-class>com.servletJspDetail.tld.HelloTag</tag-class>
+    	<body-content>empty</body-content>
+    </tag>
+    
+    <tag>
+    	<name>max</name>
+    	<tag-class>com.servletJspDetail.tld.MaxTag</tag-class>
+    	<body-content>empty</body-content>
+    	<attribute>
+    		<name>num1</name>
+    		<required>true</required>
+			<rtexprvalue>true</rtexprvalue>    		
+    	</attribute>
+    	<attribute>
+    		<name>num2</name>
+    		<required>true</required>
+			<rtexprvalue>true</rtexprvalue>    		
+    	</attribute>
+    </tag>
+    
+    <tag>
+    	<name>greet</name>
+    	<tag-class>com.servletJspDetail.tld.GreetTag</tag-class>
+    	<body-content>JSP</body-content>
+    </tag>
+    
+    <tag>
+    	<name>switch</name>
+    	<tag-class>com.servletJspDetail.tld.switchT.SwitchTag</tag-class>
+    	<body-content>JSP</body-content>
+    </tag>
+    
+    <tag>
+    	<name>case</name>
+    	<tag-class>com.servletJspDetail.tld.switchT.CaseTag</tag-class>
+    	<body-content>JSP</body-content>
+    	<attribute>
+    		<name>cond</name>
+    		<required>true</required>
+    		<rtexprvalue>true</rtexprvalue>
+    	</attribute>
+    </tag>
+    
+    <tag>
+    	<name>dafault</name>
+    	<tag-class>com.servletJspDetail.tld.switchT.DefaultTag</tag-class>
+    	<body-content>JSP</body-content>
+    </tag>
+    
+</taglib>
+
